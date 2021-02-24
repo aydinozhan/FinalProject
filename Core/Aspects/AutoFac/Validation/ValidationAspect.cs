@@ -9,7 +9,9 @@ using FluentValidation;
 
 namespace Core.Aspects.AutoFac.Validation
 {
-    public class ValidationAspect : MethodInterception
+    public class ValidationAspect : MethodInterception 
+        //Aspect (başında sonunda hata verdiğinde çalışacak metod)
+        //hangi metotları override edersek orda çalışır
     {
         private Type _validatorType;
         public ValidationAspect(Type validatorType)
