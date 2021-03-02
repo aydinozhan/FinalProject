@@ -4,7 +4,10 @@ using System.Text;
 using Microsoft.AspNetCore.Http;
 using Business.Constants;
 using Castle.DynamicProxy;
+using Core.Extensions;
 using Core.Utilities.Interceptors;
+using Core.Utilities.IoC;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Business.BusinessAspects.Autofac
 {
